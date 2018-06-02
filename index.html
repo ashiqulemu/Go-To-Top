@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery goTop.js Plugin Demo</title>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {min-height: 100vh;background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);}
+
+    .main {
+      max-width: 1000px;
+      height: 2500px;
+      margin: 150px auto;
+      text-align: center;
+      font-size: 22px;
+      line-height: 30px;
+      color: #000;
+    }
+
+    #go-top {
+      display: none;
+      font-size: 30px;
+      position: fixed;
+      bottom: 200px;
+      right: 50px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <div class="container">
+    <div class="main">
+      <h1>jQuery goTop.js Plugin Demo</h1>
+    </div>
+  </div>
+  <div id="go-top" class="iconfont icon-cc-top"></div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+<script src="jquery.goTop.js"></script>
+
+<script>
+
+  $(function () {
+    $('#go-top').goTop({
+      scrollTop: 1500,
+      scrollSpeed: 1000,
+      fadeInSpeed: 1000,
+      fadeOutSpeed: 500
+    })
+  })
+</script>
+ 
+</html>
